@@ -1,0 +1,30 @@
+{
+  "project": "Placed-SDK-iOS",
+  "framework": "Placed",
+  "version": "3.0.6",
+  "workspace": "Placed.xcworkspace",
+  "documentation_path": "../Documentation/instructions.md",
+  "wkl": "s3://placed-api/placed-sdk/ios",
+  "configurations": {
+    "debug": {
+      "scheme": "PlacedFramework",
+      "config_name": "Debug",
+      "dependencies": [
+        "Base64",
+        "Reachability"
+      ]
+    },
+    "release": {
+      "scheme": "PlacedFramework",
+      "config_name": "Release",
+      "dependencies": [
+        "Base64",
+        "Reachability"
+      ]
+    },
+    "test": {
+      "scheme": "PlacedUnitTests",
+      "config_name": "UnitTests"
+    }
+  }
+}
