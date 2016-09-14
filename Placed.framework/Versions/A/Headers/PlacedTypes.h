@@ -1,8 +1,7 @@
 //
 //  PlacedTypes.h
-//  SewichiAgent
 //
-//  Created by Mike Gottlieb on 2/1/13.
+//  Copyright (c) 2016 Placed. All rights reserved.
 //
 //
 

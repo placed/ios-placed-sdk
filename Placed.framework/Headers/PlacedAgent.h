@@ -1,8 +1,8 @@
 //
-//  PlacedAgent.h version 1.3.1
+//  PlacedAgent.h
 //
-//  Created by Mike Gottlieb on 1/10/12.
-//  Copyright (c) 2012 Placed. All rights reserved.
+//  Copyright (c) 2016 Placed. All rights reserved.
+//
 //
 
 #import <Foundation/Foundation.h>
