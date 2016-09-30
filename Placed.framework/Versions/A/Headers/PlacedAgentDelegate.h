@@ -27,11 +27,11 @@
 /** This method is called when the user Accepts the terms of the Placed agreement
  */
 @optional
--(void)userAccepted;
+-(void)userAcceptedAgreement;
 
 /** This method is called when the user Declines the terms of the Placed agreement
  */
 @optional
--(void)userDeclined;
+-(void)userDeclinedAgreement;
 
 @end;

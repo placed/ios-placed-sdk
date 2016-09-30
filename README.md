@@ -148,9 +148,13 @@ You can check the current status with [`PlacedAgent getOptInStatus]` and set the
 
     * `syncStart` - The Placed agent also notifies your delegate object when it is about to sync with the server. This is for you to time any syncing you would like to do so the required hardware is powered up less frequently.
 
-    * `userAccepted` - This method is called when the user Accepts the terms of the Placed agreement.
+    * `userAcceptedAgreement` - This method is called when the user Accepts the terms of the Placed agreement.
 
-    * `userDeclined` - This method is called when the user Declines the terms of the Placed agreement.
+        > This was renamed from `userAccepted` in `v3.0.10` to avoid any potential confusion with an Apple API with the same method name.
+
+    * `userDeclinedAgreement` - This method is called when the user Declines the terms of the Placed agreement.
+
+        > This was renamed from `userDeclined` in `v3.0.10` to avoid any potential confusion with an Apple API with the same method name.
 
 **Logging Demographics**
 
