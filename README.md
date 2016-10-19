@@ -116,7 +116,7 @@ The user can be in 1 of 3 opt in states at any given time. They are:
 *  `Accepted`
 *  `Declined`
 
-You can check the current status with `[PlacedAgent getOptInStatus]` and set the status programmatically with `[PlacedAgent setOptInStatus:]`
+You can check the current status with [`PlacedAgent getOptInStatus]` and set the status programmatically with `[PlacedAgent setOptInStatus:]`
 
 ***WARNING:*** *The user's status must be set to `Accepted` in order to collect data*
 
