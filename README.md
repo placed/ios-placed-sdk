@@ -30,14 +30,15 @@ There are two ways to install the Placed SDK. The preferred method is using [Coc
     ```
 2. Run the following command:
 
-   ```
-   $ pod install
-   ```
+    ```
+    $ pod install
+    ```
 3. Celebrate!
 
 ### Manual Installation
 
-The Placed SDK is distributed as 2 files
+The Placed SDK is distributed as two files.
+
 1. Placed.framework - The Placed library code with included headers
 2. Placed.bundle - The resources bundle containing images, xibs, and other required resources
 
@@ -63,8 +64,8 @@ After adding the Placed SDK .framework and .bundle files to your project, select
 The Placed SDK makes use of Objective-C categories. To get those to load correctly you may need to add the following Linker Flags.
 
 * Under Build Settings -> Other Linker Flags
-    * –all_load
-    * -ObjC
+    * `-all_load`
+    * `-ObjC`
 
 The Placed SDK depends on several Open Source projects including:
 
@@ -85,7 +86,7 @@ App registers for location updates
 
 Additionally, the Placed SDK requires that location information be collected "Always," not just when your app is in the foreground.  To ensure that your users cannot select "When in Use" when granting your application location permissions, be sure to delete the "NSLocationWhenInUseUsageDescription" key from your app's main plist file if it is present.
 
-**This permission is very important to the Placed SDK. If your app does not currently use it contact a Placed Representative **
+*This permission is very important to the Placed SDK. If your app does not currently use it contact a Placed Representative.*
 
 ## Integration
 
@@ -107,18 +108,18 @@ Additionally, the Placed SDK requires that location information be collected "Al
 
 + Call `[PlacedAgent stopTracking]; ` **only** if you need to stop persistent location tracking.
 
-***WARNING:*** *location gathering won’t begin again until `startTracking` is called. You should try to avoid calling `stopTracking`*
+**WARNING:** *location gathering won’t begin again until `startTracking` is called. You should try to avoid calling `stopTracking`.*
 
 **Opt-In Status**
 
-The user can be in 1 of 3 opt in states at any given time. They are:
+The user can be in one of three opt-in states at any given time. They are:
 *  `NotAsked`
 *  `Accepted`
 *  `Declined`
 
-You can check the current status with [`PlacedAgent getOptInStatus]` and set the status programmatically with `[PlacedAgent setOptInStatus:]`
+You can check the current status with [`PlacedAgent getOptInStatus]` and set the status programmatically with `[PlacedAgent setOptInStatus:]`.
 
-***WARNING:*** *The user's status must be set to `Accepted` in order to collect data*
+**WARNING:** *The user's status must be set to `Accepted` in order to collect data.*
 
 **Opt-In Dialog**
 
@@ -142,9 +143,9 @@ You can check the current status with [`PlacedAgent getOptInStatus]` and set the
 
 *  Simply create an object that implements the `PlacedAgentDelegate` protocol and supply it to the agent when you call `createWithAppKey:andDelegate`
 
-* The protocol exposes 4 methods:
+* The protocol exposes four methods:
 
-    * `didReceiveLocations:` - This will provide you with an `NSArray*` of the locations recently gathered by the agent.
+    * `didReceiveLocations:` - This will provide you with an `NSArray *` of the locations recently gathered by the agent.
 
     * `syncStart` - The Placed agent also notifies your delegate object when it is about to sync with the server. This is for you to time any syncing you would like to do so the required hardware is powered up less frequently.
 
@@ -194,5 +195,5 @@ You can check the current status with [`PlacedAgent getOptInStatus]` and set the
 
 ## Support
 
-* For further guidance contact [affiliate@placed.com](mailto:affiliate@placed.com)
+* For further guidance contact [affiliate@placed.com](mailto:affiliate@placed.com).
 

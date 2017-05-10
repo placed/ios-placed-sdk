@@ -16,15 +16,12 @@
 
 /** This method initializes the PlacedAgent and sets the delegate to be notified of updates.
  
-    This must be called before logStartSession.
- 
     You should call this in your application:didFinishLaunchingWithOptions: method.
  
-    @param appKey the app identification key you received from Placed
-    @param del the PlacedAgentDelegate you wish to have notified
-    @param prompt if true this will call showOptInDialog: 
+    @param appKey the app identification key you received from Placed.
+    @param delegate the PlacedAgentDelegate you wish to have notified.
  */
-+ (void)createWithAppKey:(NSString *)appKey andDelegate:(id<PlacedAgentDelegate>)del;
++ (void)createWithAppKey:(NSString *)appKey andDelegate:(id<PlacedAgentDelegate>)delegate;
 
 + (OptInStatus)getOptInStatus;
 + (void)setOptInStatus:(OptInStatus)status;
@@ -43,20 +40,20 @@
 
 /** This method allows you to change the delegate that is notified by the agent.
  
-    @param del the delegate you would like to be notified.
+    @param delegate the delegate you would like to be notified.
  */
-+ (void)setAgentDelegate:(id<PlacedAgentDelegate>)del;
++ (void)setAgentDelegate:(id<PlacedAgentDelegate>)delegate;
 
 /** This method will present the opt in dialog.
  
     If the users selects Accept this will call startTracking.
     If the users selects Close this will call stopTracking.
  */
-+ (void)showOptInDialogFromPresentingView:(UIViewController*)presentingView;
++ (void)showOptInDialogFromPresentingView:(UIViewController *)presentingView;
 
-+ (void)changeOptInDialogBackgroundColor:(UIColor*)color;
-+ (void)changeOptInDialogButtonColor:(UIColor*)color;
-+ (void)changeOptInDialogTextColor:(UIColor*)color;
++ (void)changeOptInDialogBackgroundColor:(UIColor *)color;
++ (void)changeOptInDialogButtonColor:(UIColor *)color;
++ (void)changeOptInDialogTextColor:(UIColor *)color;
 
 /** Returns the result of the last check for unasnwered surveys
  */
@@ -72,33 +69,17 @@
 
 /** This method is used to log demographics
  
-    @param demographicsJSON A string representing a JSON blob of the raw data returned by the source API
-    @param source A string with the name of the demographics source (e.g. Facebook)
-    @param version If the source API is versioned please include the version number.
+    @param demographicsJSON a string representing a JSON blob of the raw data returned by the source API.
+    @param source a string with the name of the demographics source (e.g. Facebook).
+    @param version if the source API is versioned please include the version number.
  */
-+ (void)logDemographicsJSON:(NSString*)demographicsJSON fromSource:(NSString*)source withAPIVersion:(NSString*)version;
++ (void)logDemographicsJSON:(NSString *)demographicsJSON fromSource:(NSString *)source withAPIVersion:(NSString *)version;
 
-/** This method will log a user's Facebook Likes
+/** If you have installed a crash handler please add a call to this when you experience a crash.
  
-    @param likesJSON The JSON data returned by Facebook as a NSString
- 
-    For an explanation of likes refer to https://developers.facebook.com/docs/reference/api/user/#likes
- */
-+ (void)logFacebookLikesJSON:(NSString*)likesJSON;
-
-/** This method logs a string as a unique ID to be mapped to this user
- 
-    @param uniqueId the string you would like associated with the app user
-
- */
-+ (void)logUniqueId:(NSString*)uniqueId;
-
-
-/** If you have installed a crash handler please add a call to this when you experience a crash
- 
-    @param the time when the crash occurred.
+    @param timestamp the time when the crash occurred.
  
  */
-+ (void)logCrash:(NSDate*)timestamp;
++ (void)logCrash:(NSDate *)timestamp;
 
 @end
