@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Placed"
-  s.version      = "3.0.15"
+  s.version      = "3.0.15.1"
   s.summary      = "Placed Affiliate SDK"
   s.homepage     = "http://www.placed.com"
   s.author       = { "Placed Affiliate Program" => "affiliate@placed.com" }

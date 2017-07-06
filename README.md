@@ -14,7 +14,7 @@ Here is a checklist for your integration process. For each step you can find mor
 2. Check project permissions.  *See Project Configuration*
 3. Add agent create code to `applicationDidFinishLaunching:withOptions:`.
 4. Add call to `[PlacedAgent startTracking]`.
-5. Show the opt in dialog or call `[PlacedAgent setOptInStatus:Accepted]`.
+5. Show the opt in dialog by calling `[PlacedAgent showOptInDialogFromPresentingView:]`.
 6. Setup additional calls for extra features (demographics, unique ids).
 
 ## Installation
@@ -116,13 +116,13 @@ The user can be in 1 of 3 opt in states at any given time. They are:
 *  `Accepted`
 *  `Declined`
 
-You can check the current status with [`PlacedAgent getOptInStatus]` and set the status programmatically with `[PlacedAgent setOptInStatus:]`
+You can check the current status with [`PlacedAgent getOptInStatus]`.
 
 ***WARNING:*** *The user's status must be set to `Accepted` in order to collect data*
 
 **Opt-In Dialog**
 
-* Call `[PlacedAgent showOptInDialogFromPresentingView:] `at any time to prompt the user to opt in or out from the current view in your app. This will call `startTracking` or `stopTracking` depending on the user’s choice and set the user’s opt-in status.
+* Call `[PlacedAgent showOptInDialogFromPresentingView:]` at any time to prompt the user to opt in or out from the current view in your app. This will call `startTracking` or `stopTracking` depending on the user’s choice and set the user’s opt-in status.
 
 * In iOS 7 a custom dialog view will be shown rather than an alert view. The default look of the dialog is pictured below. You can change the colors to match your App’s color theme using the following three methods:
 

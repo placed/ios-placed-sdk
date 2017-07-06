@@ -27,7 +27,6 @@
 + (void)createWithAppKey:(NSString *)appKey andDelegate:(id<PlacedAgentDelegate>)del;
 
 + (OptInStatus)getOptInStatus;
-+ (void)setOptInStatus:(OptInStatus)status;
 
 /** This method starts location tracking in the agent.
  
