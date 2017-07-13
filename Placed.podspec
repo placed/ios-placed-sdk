@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name         = "Placed"
-  s.version      = "3.0.17"
+  s.version      = "4.0.0"
   s.summary      = "Placed Affiliate SDK"
   s.homepage     = "http://www.placed.com"
   s.author       = { "Placed Affiliate Program" => "affiliate@placed.com" }
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '7.0'
 
   s.resources           = 'Placed.bundle'
   s.source              = { :git => 'https://github.com/placed/placed-sdk.git' }
