@@ -38,8 +38,8 @@ In addition, for iOS 11, you must provide all of the following location usage de
 
 2. Initialize the agent in your AppDelegate's `application:didFinishLaunchingWithOptions:`.
 
-  - Call `[PlacedAgent createWithAppKey:@"<Application Key>" andDelegate:nil];` providing the app key you received from Placed. Optionally, you may provide a `PlacedAgentDelegate` to this method but it is not required.
-  - Next, call `[PlacedAgent startTracking]`. This method must be called on every app start, but will only begin location collection if the user has opted in.
+    - Call `[PlacedAgent createWithAppKey:@"<Application Key>" andDelegate:nil];` providing the app key you received from Placed. Optionally, you may provide a `PlacedAgentDelegate` to this method but it is not required.
+    - Next, call `[PlacedAgent startTracking]`. This method must be called on every app start, but will only begin location collection if the user has opted in.
 
 3. Call `[PlacedAgent showOptInDialogFromPresentingView:viewController completion:completionBlock]` from the desired view controller. If the user opts in this will begin location collection. The `completionBlock` will be called once the user has dismissed the dialog indicating your application can resume. This method must be called on every app start, but the opt-in dialog will only be presented if the user has not opted in. The `completionBlock` will be called immediately if the dialog is not presented.
 
