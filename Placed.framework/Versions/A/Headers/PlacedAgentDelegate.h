@@ -17,11 +17,11 @@
  @param locations an array of CLLocation objects
  */
 @optional
--(void)didReceiveLocations:(NSArray *)locations;
+- (void)didReceiveLocations:(NSArray *)locations;
 
 /** This method is called when the Placed SDK is about to sync data to the server
  */
 @optional
--(void)syncStart;
+- (void)syncStart;
 
 @end;

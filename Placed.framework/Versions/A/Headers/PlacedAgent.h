@@ -40,28 +40,11 @@
  */
 + (void)setAgentDelegate:(id<PlacedAgentDelegate>)delegate;
 
-/** This method will present the opt in dialog.
- 
-    If the users selects Accept this will call startTracking.
-    If the users selects Close this will call stopTracking.
- */
-+ (void)showOptInDialogFromPresentingView:(UIViewController *)presentingView completion:(void (^)())completion;
+/** This will register a new user and call startTracking.
 
-+ (void)changeOptInDialogBackgroundColor:(UIColor *)color;
-+ (void)changeOptInDialogButtonColor:(UIColor *)color;
-+ (void)changeOptInDialogTextColor:(UIColor *)color;
-
-/** Returns the result of the last check for unasnwered surveys
+     This method should only be called once, when a new user enters the app.
  */
-+ (BOOL)userHasSurveys;
-
-/** Checks to see if the user has survey questions and executes the provided block with the answer.
- */
-+ (void)checkForSurveysWithCompletionBlock:(void (^)(BOOL hasSurveys))callback;
-
-/** This method will open a UIWebView hosted in the provided UIView. The webview will close when the user completes the survey.
- */
-+ (void)openSurveyWebViewInHostView:(UIView*)hostView;
++ (void)registerUser;
 
 /** If you have installed a crash handler please add a call to this when you experience a crash.
  

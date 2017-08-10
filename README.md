@@ -39,24 +39,11 @@ In addition, for iOS 11, you must provide all of the following location usage de
 2. Initialize the agent in your AppDelegate's `application:didFinishLaunchingWithOptions:`.
 
     - Call `[PlacedAgent createWithAppKey:@"<Application Key>" andDelegate:nil];` providing the app key you received from Placed. Optionally, you may provide a `PlacedAgentDelegate` to this method but it is not required.
-    - Next, call `[PlacedAgent startTracking]`. This method must be called on every app start, but will only begin location collection if the user has opted in.
+    - Next, call `[PlacedAgent startTracking]`. This method must be called on every app start, but will only begin location collection if the user has been registered via the `[PlacedAgent registerUser]` method (see below).
 
-3. Call `[PlacedAgent showOptInDialogFromPresentingView:viewController completion:completionBlock]` from the desired view controller. If the user opts in this will begin location collection. The `completionBlock` will be called once the user has dismissed the dialog indicating your application can resume. This method must be called on every app start, but the opt-in dialog will only be presented if the user has not opted in. The `completionBlock` will be called immediately if the dialog is not presented.
+3. Call `[PlacedAgent registerUser]` to register a new user for location collection by the Placed SDK. This method should only be called once in the user's lifecycle. If you have EULA or terms of service that the user is required to accept before tracking, call this method after the user accepts those terms.
 
-## Opt-in Dialog
-
-* The default look of the dialog is pictured below. You can change the colors to match your App’s color theme using the following three methods:
-
-    * `[PlacedAgent changeOptInDialogBackgroundColor:]`
-
-    * `[PlacedAgent changeOptInDialogButtonColor:]`
-
-    * `[PlacedAgent changeOptInDialogTextColor:]`
-
-
-<img src="image_0.png" alt="Dialog Box" style="width: 200px;"/>
-
-## Registration
+## How to join
 Please contact your Placed representative to find out how to register your account. If you do not have a representative yet, please email [affiliate@placed.com](mailto:affiliate@placed.com)
 
 ## Support
