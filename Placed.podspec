@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Placed"
-  s.version      = "4.0.6"
+  s.version      = "4.0.7"
   s.summary      = "Placed Affiliate SDK"
   s.homepage     = "http://www.placed.com"
   s.author       = { "Placed Affiliate Program" => "affiliate@placed.com" }
@@ -16,5 +16,4 @@ Pod::Spec.new do |s|
   s.libraries   = 'z', 'sqlite3'
 
   s.dependency 'Reachability', '~> 3.2'
-  s.dependency 'Base64', '~> 1.0.1'
 end
