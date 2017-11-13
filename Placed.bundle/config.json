@@ -1,7 +1,7 @@
 {
   "project": "Placed-SDK-iOS",
   "framework": "Placed",
-  "version": "4.0.8",
+  "version": "4.0.9",
   "workspace": "Placed.xcworkspace",
   "documentation_path": "README.md",
   "documentation_image": "image_0.png",
