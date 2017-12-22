@@ -1,0 +1,5 @@
+platform :ios, '11.0'
+
+target 'SampleApp' do
+  pod 'Placed', :git => 'https://github.com/placed/ios-placed-sdk.git'
+end
