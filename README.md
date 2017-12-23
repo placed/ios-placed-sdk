@@ -41,10 +41,10 @@ In addition, for iOS 11, you must provide all of the following location usage de
     - Call `[PlacedAgent createWithAppKey:@"<Application Key>" andDelegate:nil];` providing the app key you received from Placed. Optionally, you may provide a `PlacedAgentDelegate` to this method but it is not required.
     - Next, call `[PlacedAgent startTracking]`. This method must be called on every app start, but will only begin location collection if the user has been registered via the `[PlacedAgent registerUser]` method (see below).
 
-3. Call `[PlacedAgent registerUser]` to register a new user for location collection by the Placed SDK. This method should only be called once in the user's lifecycle. If you have EULA or terms of service that the user is required to accept before tracking, call this method after the user accepts those terms.
+3. Call `[PlacedAgent registerUser]` to register a new user for location collection by the Placed SDK. This method should only be called once in the user's lifecycle. If you have EULA or terms of service that the user is required to accept before tracking, call this method after the user accepts those terms. You may find the method `[PlacedAgent isUserRegistered]` useful for checking if `registerUser` has already been called before.
 
 ## How to join
-Please contact your Placed representative to find out how to register your account. If you do not have a representative yet, please email [affiliate@placed.com](mailto:affiliate@placed.com)
+Please contact your Placed representative to find out how to register your account. If you do not have a representative yet, please email [affiliate@placed.com](mailto:affiliate@placed.com).
 
 ## Support
-For further guidance contact [affiliate@placed.com](mailto:affiliate@placed.com)
+For further guidance, please contact [affiliate@placed.com](mailto:affiliate@placed.com).
