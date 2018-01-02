@@ -46,6 +46,10 @@
  */
 + (void)registerUser;
 
+/** This will return if a user has been registered with a previous call to registerUser
+ */
++ (BOOL)isUserRegistered;
+
 /** If you have installed a crash handler please add a call to this when you experience a crash.
  
     @param timestamp the time when the crash occurred.
