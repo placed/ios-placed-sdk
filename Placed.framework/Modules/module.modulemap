@@ -1,0 +1,6 @@
+framework module Placed {
+  umbrella header "Placed-umbrella.h"
+
+  export *
+  module * { export * }
+}
