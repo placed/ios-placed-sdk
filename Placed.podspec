@@ -1,19 +1,16 @@
 Pod::Spec.new do |s|
   s.name         = "Placed"
-  s.version      = "4.0.11"
+  s.version      = "4.1.1"
   s.summary      = "Placed Affiliate SDK"
-  s.homepage     = "http://www.placed.com"
+  s.homepage     = "https://www.placed.com"
   s.author       = { "Placed Affiliate Program" => "affiliate@placed.com" }
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
 
   s.resources           = 'Placed.bundle'
-  s.source              = { :git => 'https://github.com/placed/placed-sdk.git' }
+  s.source              = { :git => 'https://github.com/placed/ios-placed-sdk.git' }
   s.vendored_frameworks = 'Placed.framework'
-  s.xcconfig            = { 'OTHER_LDFLAGS' => '-lObjc' }
+  s.xcconfig            = { 'OTHER_LDFLAGS' => '-ObjC' }
   s.preserve_paths      = 'Placed.framework'
 
-  s.frameworks  = 'CoreData', 'CoreTelephony', 'CoreLocation', 'CoreMotion', 'SystemConfiguration', 'AdSupport', 'Foundation', 'CoreGraphics', 'UIKit', 'Security'
-  s.libraries   = 'z', 'sqlite3'
-
-  s.dependency 'Reachability', '~> 3.2'
+  s.frameworks  = 'CoreData', 'CoreTelephony', 'CoreLocation', 'CoreMotion', 'SystemConfiguration', 'AdSupport', 'Foundation', 'UIKit', 'Security'
 end

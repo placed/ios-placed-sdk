@@ -1,7 +1,7 @@
 {
   "project": "Placed-SDK-iOS",
   "framework": "Placed",
-  "version": "4.0.11",
+  "version": "4.1.1",
   "workspace": "Placed.xcworkspace",
   "documentation_path": "README.md",
   "documentation_image": "image_0.png",
@@ -9,19 +9,11 @@
   "configurations": {
     "debug": {
       "scheme": "PlacedFramework",
-      "config_name": "Debug",
-      "dependencies": [
-        "Base64",
-        "Reachability"
-      ]
+      "config_name": "Debug"
     },
     "release": {
       "scheme": "PlacedFramework",
-      "config_name": "Release",
-      "dependencies": [
-        "Base64",
-        "Reachability"
-      ]
+      "config_name": "Release"
     },
     "test": {
       "scheme": "PlacedUnitTests",
