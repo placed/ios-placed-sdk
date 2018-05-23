@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BF7B92520A3AFE800EE4D52 /* SampleAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF7B92320A3AFE800EE4D52 /* SampleAlertViewController.m */; };
+		2BF7B92620A3AFE800EE4D52 /* SampleAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF7B92420A3AFE800EE4D52 /* SampleAlertViewController.xib */; };
+		96301AE7900C9797E86D11D0 /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4C4B2E15741F8E2E1B30E4 /* Pods_SampleApp.framework */; };
 		9B591B5A1FD6033B007630C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B591B591FD6033B007630C9 /* AppDelegate.m */; };
 		9B591B5D1FD6033B007630C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B591B5C1FD6033B007630C9 /* ViewController.m */; };
 		9B591B601FD6033B007630C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B591B5E1FD6033B007630C9 /* Main.storyboard */; };
 		9B591B621FD6033B007630C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B591B611FD6033B007630C9 /* Assets.xcassets */; };
 		9B591B651FD6033B007630C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B591B631FD6033B007630C9 /* LaunchScreen.storyboard */; };
 		9B591B681FD6033B007630C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B591B671FD6033B007630C9 /* main.m */; };
-		E364D8FC89AD27A7D922DED3 /* libPods-SampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE26D6FFA64FBE040560513 /* libPods-SampleApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		179D363020295416E0308F7D /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		1F70B84BCD5EF859658160BE /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		2EE26D6FFA64FBE040560513 /* libPods-SampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF7B92220A3AFE800EE4D52 /* SampleAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleAlertViewController.h; sourceTree = "<group>"; };
+		2BF7B92320A3AFE800EE4D52 /* SampleAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAlertViewController.m; sourceTree = "<group>"; };
+		2BF7B92420A3AFE800EE4D52 /* SampleAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleAlertViewController.xib; sourceTree = "<group>"; };
 		9B591B551FD6033B007630C9 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B591B581FD6033B007630C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B591B591FD6033B007630C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -30,6 +34,7 @@
 		9B591B641FD6033B007630C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B591B661FD6033B007630C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B591B671FD6033B007630C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC4C4B2E15741F8E2E1B30E4 /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E364D8FC89AD27A7D922DED3 /* libPods-SampleApp.a in Frameworks */,
+				96301AE7900C9797E86D11D0 /* Pods_SampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +61,7 @@
 		4C453A66CFBDB94C9D986AFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2EE26D6FFA64FBE040560513 /* libPods-SampleApp.a */,
+				FC4C4B2E15741F8E2E1B30E4 /* Pods_SampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,6 +89,9 @@
 			children = (
 				9B591B581FD6033B007630C9 /* AppDelegate.h */,
 				9B591B591FD6033B007630C9 /* AppDelegate.m */,
+				2BF7B92220A3AFE800EE4D52 /* SampleAlertViewController.h */,
+				2BF7B92320A3AFE800EE4D52 /* SampleAlertViewController.m */,
+				2BF7B92420A3AFE800EE4D52 /* SampleAlertViewController.xib */,
 				9B591B5B1FD6033B007630C9 /* ViewController.h */,
 				9B591B5C1FD6033B007630C9 /* ViewController.m */,
 				9B591B5E1FD6033B007630C9 /* Main.storyboard */,
@@ -106,8 +114,8 @@
 				9B591B511FD6033B007630C9 /* Sources */,
 				9B591B521FD6033B007630C9 /* Frameworks */,
 				9B591B531FD6033B007630C9 /* Resources */,
-				F46F2528666BE2DE16647CE7 /* [CP] Embed Pods Frameworks */,
 				3063A9684DA9F523F30ADF2E /* [CP] Copy Pods Resources */,
+				72228D0CE512AE3269B38989 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +172,7 @@
 				9B591B651FD6033B007630C9 /* LaunchScreen.storyboard in Resources */,
 				9B591B621FD6033B007630C9 /* Assets.xcassets in Resources */,
 				9B591B601FD6033B007630C9 /* Main.storyboard in Resources */,
+				2BF7B92620A3AFE800EE4D52 /* SampleAlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,11 +190,29 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Placed.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleApp/Pods-SampleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72228D0CE512AE3269B38989 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks.sh",
+				"${PODS_ROOT}/Placed/Placed.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Placed.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E69845DF5A0241E1F0F3544B /* [CP] Check Pods Manifest.lock */ = {
@@ -206,21 +233,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F46F2528666BE2DE16647CE7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -231,6 +243,7 @@
 				9B591B5D1FD6033B007630C9 /* ViewController.m in Sources */,
 				9B591B681FD6033B007630C9 /* main.m in Sources */,
 				9B591B5A1FD6033B007630C9 /* AppDelegate.m in Sources */,
+				2BF7B92520A3AFE800EE4D52 /* SampleAlertViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

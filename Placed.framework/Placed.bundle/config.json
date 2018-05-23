@@ -1,11 +1,8 @@
 {
   "project": "Placed-SDK-iOS",
   "framework": "Placed",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "workspace": "Placed.xcworkspace",
-  "documentation_path": "README.md",
-  "documentation_image": "image_0.png",
-  "wkl": "s3://placed-api/placed-sdk/ios",
   "configurations": {
     "debug": {
       "scheme": "PlacedFramework",

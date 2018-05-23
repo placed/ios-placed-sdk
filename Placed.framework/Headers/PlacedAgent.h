@@ -14,6 +14,7 @@
 @interface PlacedAgent : NSObject
 
 /** This method initializes the PlacedAgent and sets the delegate to be notified of updates.
+    After calling registerUser this method will also handle starting location tracking in the agent.
  
     You should call this in your application:didFinishLaunchingWithOptions: method.
  
@@ -22,31 +23,27 @@
  */
 + (void)createWithAppKey:(NSString *)appKey andDelegate:(id<PlacedAgentDelegate>)delegate;
 
-/** This method starts location tracking in the agent.
- 
-    Call this when you want location gathering to begin, but after initializing the agent.
- */
-+ (void)startTracking;
-
-/** This method stops all location tracking for the agent.
- 
-    Only call this if you want all tracking to stop.
- */
-+ (void)stopTracking;
-
 /** This method allows you to change the delegate that is notified by the agent.
  
     @param delegate the delegate you would like to be notified.
  */
 + (void)setAgentDelegate:(id<PlacedAgentDelegate>)delegate;
 
-/** This will register a new user and call startTracking.
+/** This will register a new user and start location tracking in the agent.
 
      This method should only be called once, when a new user enters the app.
  */
 + (void)registerUser;
 
-/** This will return if a user has been registered with a previous call to registerUser
+/** This deregisters a user and stops all location tracking.
+
+ Only call this if you want all tracking to stop. The Placed SDK can only be restarted by calling registerUser again.
+ */
++ (void)deregisterUser;
+
+/** This will return if a user is in the registered state.
+
+ This will return true after calling registerUser and false after calling deregisterUser.
  */
 + (BOOL)isUserRegistered;
 
